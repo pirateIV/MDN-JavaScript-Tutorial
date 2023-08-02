@@ -16,7 +16,7 @@ searchBtn.addEventListener("click", (e) => {
   }
 
   if(searchHistoryArr.length >= max_items) {
-    searchHistoryArr.pop(searchHistoryArr[max_items])
+    searchHistoryArr.pop()
   }
   console.log(searchHistoryArr)
 });
