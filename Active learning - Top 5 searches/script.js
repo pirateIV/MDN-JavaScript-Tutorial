@@ -11,12 +11,9 @@ searchBtn.addEventListener("click", (e) => {
   list.innerHTML = "";
 
   searchHistoryArr.unshift(searchVal);
-  searchHistoryArr.forEach((historySearchVal) => {
-    const listItem = document.createElement("li");
-
-    listItem.textContent = historySearchVal;
-    list.appendChild(listItem);
-  });
+  for(let i = 0; i < searchHistoryArr.length; i++) {
+    list.innerHTML += `<li>${searchHistoryArr[i]}</li>`
+  }
 
   if(searchHistoryArr.length >= max_items) {
     searchHistoryArr.pop(searchHistoryArr[max_items])
