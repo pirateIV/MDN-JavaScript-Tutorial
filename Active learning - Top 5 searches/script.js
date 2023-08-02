@@ -3,7 +3,7 @@ const searchBtn = document.getElementById("btn");
 
 const list = document.getElementById("list");
 
-let max_items = 6;
+let max_items = 5;
 let searchHistoryArr = [];
 searchBtn.addEventListener("click", (e) => {
   let searchVal = searchInput.value;
@@ -18,5 +18,7 @@ searchBtn.addEventListener("click", (e) => {
   if(searchHistoryArr.length >= max_items) {
     searchHistoryArr.pop()
   }
+  searchInput.value = ''
+  searchInput.focus()
   console.log(searchHistoryArr)
 });
