@@ -3,6 +3,8 @@
 let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
 
 let myArray = myString.split("+")
+let arrayLength = myArray.length
+let lastItem = myArray[myArray.length - 1]
 
 // Don't edit the code below here!
 
