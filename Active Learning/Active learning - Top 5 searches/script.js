@@ -17,7 +17,7 @@ searchBtn.addEventListener("click", (e) => {
 
   if(searchHistoryArr.length >= max_items) {
     searchHistoryArr.pop()
-  }
+  }4
   searchInput.value = ''
   searchInput.focus()
   console.log(searchHistoryArr)
