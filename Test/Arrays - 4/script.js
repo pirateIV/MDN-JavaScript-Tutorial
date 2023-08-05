@@ -5,9 +5,9 @@ const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
 // for(let i = 0; i <= birds.length; i++) {
 //   birds.splice(birds[i])
 // }
-
-birds.forEach((bird, index) => {
-    
+let eBirds;
+eBirds = birds.map((bird, index) => {
+    bird[index].startsWith("E")
 })
 
 
