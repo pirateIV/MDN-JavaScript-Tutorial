@@ -2,6 +2,7 @@ const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("btn");
 
 const list = document.getElementById("list");
+searchInput.placeholder = 'Enter a value'
 
 let max_items = 5;
 let searchHistoryArr = [];
@@ -17,7 +18,7 @@ searchBtn.addEventListener("click", (e) => {
 
   if(searchHistoryArr.length >= max_items) {
     searchHistoryArr.pop()
-  }4
+  }
   searchInput.value = ''
   searchInput.focus()
   console.log(searchHistoryArr)
