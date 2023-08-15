@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array1 = ["a", "b", "c", "d", "e", "f"];
+
+      // copy to index 0 the element at index 3
+      console.log(array1.copyWithin(0, 3, 4));
+
+      const a = ["a", "b", "c"];
+
+      // for (const [index, element] of a.entries()) {
+      //   console.log(index, element);
+      // }
+
+      // Using a for...of loop
+
+        const arrayEntries = array1.entries()
+
+        for(const element of arrayEntries) {
+          console.log(element)
+        }
+
+        const arrayLike = {
+          length: 3,
+          0: "a",
+          1: "b",
+          2: "c", 
+          3: "d"
+        }
+
+        for(const entry of Array.prototype.entries.call(arrayLike)) {
+          console.log(entry);
+        }
+    </script>
+  </body>
+</html>
